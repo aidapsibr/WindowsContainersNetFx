@@ -1,7 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Worker">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
+
     <UserSecretsId>dotnet-WorkerService-3E21F7AB-9839-4E52-972C-877F69AE5522</UserSecretsId>
   </PropertyGroup>
 

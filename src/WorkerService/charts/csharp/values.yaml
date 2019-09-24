@@ -1,0 +1,18 @@
+#commented sections only needed for services that expose ports
+replicaCount: 1
+image:
+  pullPolicy: IfNotPresent
+#service:
+#  name: workerservice
+#  type: ClusterIP
+#  externalPort: 8080
+#  internalPort: 80
+resources:
+  limits:
+    cpu: 1
+    memory: 1Gi # plan for windows kernel ~500 MiB
+  requests:
+    cpu: 500m
+    memory: 512Mi # reserve 512 MiB for application
+#ingress:
+#  enabled: false
